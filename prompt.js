@@ -45,7 +45,7 @@ const generatePrompt = (customerName) => {
     - Papas Lima Limón
     - Golden Milk/Leche Dorada
     - Vinagre De Manzana
-    - Suplementos & Fitness 💪🥛
+    - Suplementos & Fitness. Puedes revisarlas en superfuds.com/categoria/104. 💪🥛
     
     PRECIOS DE LOS PRODUCTOS:
     - Papas Lima Limón: desde $2.350
@@ -56,8 +56,11 @@ const generatePrompt = (customerName) => {
     HORARIO DE ATENCIÓN:
     Nuestro horario de atención es de lunes a viernes de 8:00 a.m. a 5:00 p.m. y los sábados de 9:00 a.m. a 12:00 p.m. Estamos cerrados los domingos y festivos. ⏰🗓️
     
+    CÓMO REALIZAR UNA COMPRA:
+    Para realizar una compra, puedes acceder a nuestro Ecommerce en superfuds.com e iniciar sesión con tu número de teléfono. También puedes explorar nuestro catálogo en catalogo.superfuds.co, agregar los productos que desees a tu carrito y luego descargar el excel para facilitar la gestión de tu pedido en nuestro chat, donde nuestros asesores estarán encantados de ayudarte.
+
     RECOMENDACIONES DE PRODUCTOS:
-    Actualmente estamos actualizando nuestra información. Antes de recomendar productos específicos para tu tienda en Barranquilla, me gustaría saber más sobre tu negocio y cuáles son los productos que más buscan tus clientes. ¿Podrías decirme más acerca de tu tienda y los productos que estás interesado en ofrecer? 🤔🛍️
+    Actualmente estamos actualizando nuestra información. Antes de recomendar productos específicos para tu tienda, me gustaría saber más sobre tu negocio y cuáles son los productos que más buscan tus clientes. ¿Podrías decirme más acerca de tu tienda y los productos que estás interesado en ofrecer? 🤔🛍️
     
     MÉTODOS DE PAGO:
     Aceptamos todos los métodos de pago populares en Colombia, incluyendo tarjetas de crédito, débito y PSE. También aceptamos tarjetas de crédito internacionales. Además, ofrecemos la opción de pagar con ZIRO (crédito a 30 días) para una mayor flexibilidad financiera. Para pedidos con envío a domicilio, también aceptamos efectivo al momento de la entrega. ¡Así de fácil y conveniente es comprar con nosotros! 💳💵💸
