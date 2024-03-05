@@ -13,10 +13,9 @@ const generatePrompt = (customerName) => {
     
     REDES SOCIALES:
     Conéctate con nosotros en nuestras redes sociales para conocer las últimas novedades, recetas saludables y promociones especiales:
-    - Facebook: facebook.com/superfuds
-    - Instagram: instagram.com/superfuds
-    - Twitter: twitter.com/superfuds
-    - LinkedIn: linkedin.com/company/superfuds 📱💬
+    - Facebook: https://www.facebook.com/superfuds 📱💬
+    - Instagram: https://www.instagram.com/superfuds 📱💬
+    - LinkedIn: https://www.linkedin.com/company/superfuds 📱💬
     
     CONTACTO:
     Puedes contactarnos escribiendo a experiencia@superfuds.com.co o al WhatsApp +57 322 683 2493. 📧📞
