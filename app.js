@@ -14,10 +14,7 @@ const main = async () => {
     const flowPrincipal = addKeyword(EVENTS.WELCOME)
         .addAction(async (_, { flowDynamic }) => {
             const prompts = generatePrompt(_.name);
-
             let content = _.body;
-            console.log(containsSalesKeywords(_.body)?.additionalWord);
-            console.log(containsSalesKeywords(_.body)?.isSalesQuestion);
             /*     if (containsSalesKeywords(_.body)?.additionalWord !== null && containsSalesKeywords(_.body)?.isSalesQuestion) {
                     await flowDynamic('Dame un momento para consultar por el producto...');
                     const product = await searchProduct(containsSalesKeywords(_.body)?.additionalWord);
@@ -26,7 +23,7 @@ const main = async () => {
             const text = await openai.chat.completions.create({
                 model: 'gpt-3.5-turbo-16k',
                 temperature: 0,
-                // max_tokens: 326,
+                max_tokens: 326,
                 top_p: 0,
                 frequency_penalty: 0,
                 presence_penalty: 0,
