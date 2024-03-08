@@ -21,7 +21,7 @@ const main = async () => {
                 const text = await openai.chat.completions.create({
                     model: 'gpt-4-turbo-preview',
                     temperature: 0,
-                    max_tokens: 200,
+                    max_tokens: 50,
                     top_p: 0,
                     frequency_penalty: 0,
                     presence_penalty: 0,
