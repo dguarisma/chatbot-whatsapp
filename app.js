@@ -15,50 +15,28 @@ const main = async () => {
         .addAction(async (_, { flowDynamic }) => {
             const prompts = generatePrompt(_.name);
             let content = _.body;
-            /*     if (containsSalesKeywords(_.body)?.additionalWord !== null && containsSalesKeywords(_.body)?.isSalesQuestion) {
-                    await flowDynamic('Dame un momento para consultar por el producto...');
-                    const product = await searchProduct(containsSalesKeywords(_.body)?.additionalWord);
-                    content = JSON.stringify(product);
-                } */
-            const text = await openai.chat.completions.create({
-                model: 'gpt-3.5-turbo-16k',
-                temperature: 0,
-                max_tokens: 326,
-                top_p: 0,
-                frequency_penalty: 0,
-                presence_penalty: 0,
-                messages: [{
-                    role: 'system',
-                    content: prompts
-                },
-                { role: 'user', content },
-                {
-                    role: 'user',
-                    content: `El nombre del cliente es ${_.name}`
-                }],
-            });
-            return flowDynamic([{ body: text.choices[0].message.content, delay: 100 }]);
-            /*    } else {
-                   const text = await openai.chat.completions.create({
-                       model: 'gpt-3.5-turbo-16k',
-                       temperature: 0,
-                       // max_tokens: 326,
-                       top_p: 0,
-                       frequency_penalty: 0,
-                       presence_penalty: 0,
-                       messages: [{
-                           role: 'system',
-                           content: prompts
-                       },
-                       { role: 'user', content: _.body },
-                       {
-                           role: 'user',
-                           content: `El nombre del cliente es ${_.name}`
-                       }],
-                   });
-   
-                   return flowDynamic([{ body: text.choices[0].message.content, delay: 100 }]);
-               } */
+            if (content.includes('asesor' || 'Asesor')) {
+                await flowDynamic('Por favor, manténgase en línea mientras lo conectamos con uno de nuestros asesores.')
+            } else {
+                const text = await openai.chat.completions.create({
+                    model: 'gpt-4-turbo-preview',
+                    temperature: 0,
+                    max_tokens: 200,
+                    top_p: 0,
+                    frequency_penalty: 0,
+                    presence_penalty: 0,
+                    messages: [{
+                        role: 'system',
+                        content: prompts
+                    },
+                    { role: 'user', content },
+                    {
+                        role: 'user',
+                        content: `El nombre del cliente es ${_.name}`
+                    }],
+                });
+                return flowDynamic([{ body: text.choices[0].message.content, delay: 0 }]);
+            }
         })
 
 
