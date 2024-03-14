@@ -1,5 +1,21 @@
 # Bot de WhatsApp con OpenAI
 
+<table border="0" align="center">
+  <tr>
+    <td>
+      <img src="https://github.com/dguarisma/chatbot-whatsapp/assets/66569273/dc3def63-e11a-48c4-a44e-25259ca010d7" alt="Imagen 1" width="100">
+    </td>
+    <td>
+        <h1>+</h1>
+    </td>
+    <td>
+      <img src="https://github.com/dguarisma/chatbot-whatsapp/assets/66569273/e494e5dd-9050-4e40-b4ac-c901db271191" alt="Imagen 2" width="100">
+    </td>
+  </tr>
+</table>
+
+
+
 Este proyecto es un bot de WhatsApp que utiliza la plataforma OpenAI para generar respuestas automáticas basadas en el contenido recibido. 
 
 ## El bot se desarrollo utilizando Node.js y las siguientes dependencias:
@@ -23,12 +39,10 @@ El archivo `app.js` contiene el código principal del bot. Aquí se inicializan 
 
 Para ejecutar el bot, asegúrese de tener Node.js instalado y las dependencias del proyecto instaladas utilizando `pnpm install`.
 
-Luego, ejecute el siguiente comando:
+Luego, ejecute el siguiente comando: `pnpm run dev`
 
+### Package
 ```bash 
-pnpm run dev
-
-```
 {
   "name": "chatbotwhatsapp",
   "version": "1.0.0",
@@ -46,4 +60,5 @@ pnpm run dev
     "node-fetch": "^3.3.2",
     "openai": "^4.27.0"
   }
-}```
+}
+```
